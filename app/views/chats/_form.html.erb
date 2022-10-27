@@ -5,8 +5,8 @@
         action: "turbo:submit-end->chat-subscription#resetForm"
       }
     } do |f|
-  %>
-    <div class="message-container col-12 text-center">
+%>
+  <div class="message-container col-12 text-center">
       <% if current_user.role == "admin" %>
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
@@ -35,5 +35,5 @@
       <% else %>
         <%= "Check Out The Latest Happening in ##{@chat.name}" %>
       <% end %>
-    </div>
+  </div>
   <% end %>

@@ -9,7 +9,7 @@ export default class extends Controller {
   }
 
   connect() {
-    console.log("connecting to the ActionCable channel with id ${this.chatIdValue}")
+    console.log("Testing 2")
 
     this.channel = createConsumer().subscriptions.create(
       { channel: "ChatChannel", id: this.chatIdValue },
@@ -19,7 +19,7 @@ export default class extends Controller {
 
 
   disconnect() {
-    console.log("Disconnecting from channel")
+    console.log("Disconnecting from channel......")
     this.channel.unsubscribe()
   }
 
